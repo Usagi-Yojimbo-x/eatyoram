@@ -1,4 +1,4 @@
-## This is a C programm that eat 99% of ram.
+## This is a C programm that eat 99% of your ram.
 
 To make memory usage extremely high( up to around 99% ), I gonna use malloc() function in C.
 The idea is to allocate all the space on heap and assign them.
