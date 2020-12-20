@@ -13,7 +13,7 @@ Before running the program, type "watch free -om" in one terminal to watch the p
 Run the program in another terminal. "./eatyoram 1100"
 
 If we dont add the argument, this will casue the infinity loop and malloc keep allocating on heap till there is no more. 
-In my scenerio, malloc will use 1220MB and linux will kill the process. 
+In my scenario, malloc will use 1220MB and linux will kill the process. 
 
 ![running the program](https://github.com/Usagi-Yojimbo-x/eatyoram/blob/main/Screenshot%20(74).png)
 
