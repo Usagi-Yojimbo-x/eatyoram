@@ -22,8 +22,8 @@ and use memset to fill those allocated memory */
     
     printf("\nPress enter to exit");
     if (esc == getchar()){
-	free(buffer);
-	exit(0);
+	free(buffer);    // this will free only last 10MB
+	exit(0);         // all the memory will be freed when program exit anyway
     }
     return 0;
 }
