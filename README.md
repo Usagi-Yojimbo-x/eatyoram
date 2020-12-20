@@ -16,6 +16,7 @@ In my scenerio, malloc will use 1220MB and linux will kill the process.
 ![running the program](https://github.com/Usagi-Yojimbo-x/eatyoram/blob/main/Screenshot%20(74).png)
 
 The programm uses about 1100MB which is 98.6% of total. We can round that to 99% :)
-The reason that the program can use up to 1220MB, which is greater than total memory(1GB), is beacause of the swap partition in linux.
+The reason that the program can use up to 1220MB, which is greater than base memory(1GB), is beacause of the swap partition in linux. 
+So even if I use 1000MB, the result will be the same.
 
 ref: https://www.linuxatemyram.com/
