@@ -15,10 +15,11 @@ int main(int argc, char** argv) {
     while((buffer=(char*)malloc(1024*1024*10)) != NULL && mb != max) {
         memset(buffer, 0, 1024*1024*10);
         mb += 10;
-        printf("Allocated %d MB\n", mb);
+        printf("\rAllocated %d MB", mb);
+	fflush(stdout);
     }
     
-    printf("Press enter to exit");
+    printf("\nPress enter to exit");
     if (esc == getchar())
 	free(buffer);
 	exit(0); 
