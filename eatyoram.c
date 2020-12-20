@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
 
 /* allocating memory on heap by malloc(10 MB)
 and use memset to fill those allocated memory */
-    while((buffer=malloc(1024*1024*10)) != NULL && mb != max) {
+    while((buffer=(char*)malloc(1024*1024*10)) != NULL && mb != max) {
         memset(buffer, 0, 1024*1024*10);
         mb += 10;
         printf("Allocated %d MB\n", mb);
