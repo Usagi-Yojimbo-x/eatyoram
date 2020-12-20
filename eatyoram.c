@@ -20,7 +20,7 @@ and use memset to fill those allocated memory */
     }
     
     printf("Press enter to exit");
-    if (esc = getchar()){
+    if (esc == getchar()){
 	free(buffer);
 	exit(0);
     }
